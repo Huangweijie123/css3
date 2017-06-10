@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,html{margin:0;padding:0;background-color:#434343}
+.wrap{margin:50px auto;width:900px;height:50px}
+.wrap li,.wrap ul{margin:0;padding:0;list-style:none}
+.wrap li{float:left;margin-left:1px;padding:50px;border-bottom:5px solid #2663a1;background-color:#5283bf;transition:all .5s}
+.wrap a,.wrap li{width:5pc;height:5pc;color:#fff}
+.wrap a{position:relative;display:block;text-align:center;text-decoration:none;font-size:.875rem;line-height:5pc}
+.wrap a:after{position:absolute;top:0;left:0;display:block;width:5pc;height:5pc;border:3px solid #fff;border-radius:50px;content:' ';border-bottom-color:transparent}
+.wrap li:hover{padding:50px 80px}
+.wrap li:hover a:after{animation:round 1s infinite linear forwards}
+@keyframes round{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+	<div class="wrap">
+	<ul>
+	<li>
+	<a href="javascript:void(0)">HOME</a></li>
+	<li><a href="javascript:void(0)">HOME</a>
+	</li>
+	<li>
+	<a href="javascript:void(0)">HOME</a>
+	</li>
+	<li>
+	<a href="javascript:void(0)">HOME</a>
+	</li>
+	</ul>
+	</div>
+</body>
+</html>
