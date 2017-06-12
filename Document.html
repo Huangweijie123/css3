@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	html{ height: 100%; }
+		body{ height: 100%; margin: 0; background-color: #000; }
+		.wrap{height: 100%; display: flex;  justify-content:center; align-items:center; }
+		.sunwrap{ width: 800px; height: 800px;   display: flex;  justify-content:center; align-items:center;}
+		.sun{ position: absolute; z-index: 1; width: 80px; height: 80px;  }
+		.sun img{ width: 80px; height: 80px; }
+		.earthwrap{ position: absolute; z-index: 0; width: 300px; height: 300px;   animation: round 10s linear infinite;  border-radius: 300px;
+			border:1px solid #555; }
+		.earth{ position: absolute; top: 16px;left: 16px; width: 60px; height: 60px; display: flex;  justify-content:center; align-items:center; }
+		.earth img{ position: absolute; z-index: 0; width: 20px; height: 20px; animation: round 1s linear infinite;}
+		.moon{ position: absolute; z-index: 1; width:60px; height: 60px;   border-radius: 60px; animation: round 3s linear infinite; border:1px solid #666; }
+
+		.m{ width: 10px; height: 10px; background-color: #ddd; border-radius: 10px; margin: 4px }
+		@keyframes round{
+			0%{transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="sunwrap">
+		<div class="earthwrap">
+			<div class="earth">
+				<img src="e.png">
+				<div class="moon"><div class="m"></div></div>
+			</div>
+		</div>
+		<div class="sun"><img src="sun.jpg"/></div>
+	</div>
+ </div>
+
+</body>
+</html>
